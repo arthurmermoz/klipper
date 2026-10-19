@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidentialité · Klipper</title>
+<link rel="icon" href="logo.png">
+<style>
+  :root { --bg: #faf8f6; --ink: #1d1d1b; --muted: #6b6b66; --accent: #d61c4e; --line: #e8e4df; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #161615; --ink: #ecebe6; --muted: #9b9a93; --accent: #ff6b8a; --line: #34332f; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, "Segoe UI", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+  header img { width: 44px; height: 44px; }
+  header a { color: inherit; text-decoration: none; font-weight: 700; font-size: 20px; }
+  h1 { font-size: 30px; margin: 0 0 4px; }
+  .date { color: var(--muted); margin: 0 0 28px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; }
+  ul { padding-left: 22px; }
+  li { margin: 5px 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <header><img src="logo.png" alt=""><a href="index.html">Klipper</a></header>
+
+  <h1>Politique de confidentialité</h1>
+  <p class="date">Dernière mise à jour : 19 octobre 2026</p>
+
+  <h2>Qui utilise Klipper</h2>
+  <p>Klipper est un outil personnel, exécuté uniquement sur l'ordinateur de son éditeur, pour gérer sa propre chaîne YouTube.
+     Il n'est ni vendu ni proposé au public. Aucun service en ligne Klipper ne reçoit vos données.</p>
+
+  <h2>Données Google auxquelles Klipper accède</h2>
+  <p>Avec l'autorisation explicite du titulaire du compte, donnée sur l'écran de consentement de Google, Klipper utilise :</p>
+  <ul>
+    <li><strong>API YouTube Data</strong> (accès <code>youtube</code>) pour envoyer des vidéos sur la chaîne de l'éditeur,
+        définir leur titre, leur description, leurs mots-clés, leur miniature et leur date de mise en ligne, les ajouter à une playlist,
+        et lister les dernières vidéos envoyées afin d'éviter les doublons ;</li>
+    <li><strong>API YouTube Analytics</strong> (accès <code>yt-analytics.readonly</code>, lecture seule) pour lire le nombre de vues
+        et la durée moyenne de visionnage des clips publiés.</li>
+  </ul>
+
+  <h2>Comment ces données sont utilisées et conservées</h2>
+  <ul>
+    <li>Les données sont utilisées uniquement pour les fonctions décrites ci-dessus.</li>
+    <li>Le jeton d'autorisation Google et les statistiques sont enregistrés <strong>uniquement sur l'ordinateur de l'éditeur</strong>,
+        dans une base de données locale. Ils ne sont envoyés à aucun serveur tiers.</li>
+    <li>Les données ne sont ni vendues, ni partagées, ni utilisées à des fins publicitaires.</li>
+    <li>Les vidéos envoyées sont celles que l'éditeur a lui-même validées ; il en détient les droits.</li>
+  </ul>
+
+  <h2>Services tiers</h2>
+  <p>Pour préparer les clips avant leur envoi, Klipper transmet l'audio des vidéos sources à un service de transcription (Deepgram)
+     et le texte transcrit à un service d'intelligence artificielle (Anthropic) pour proposer des extraits et des titres.
+     Aucune donnée issue des API Google n'est transmise à ces services.</p>
+  <p>L'utilisation de YouTube est soumise aux <a href="https://www.youtube.com/t/terms">Conditions d'utilisation de YouTube</a>
+     et aux <a href="https://policies.google.com/privacy">Règles de confidentialité de Google</a>.
+     L'utilisation des informations reçues des API Google respecte le
+     <a href="https://developers.google.com/terms/api-services-user-data-policy">règlement sur les données utilisateur des services d'API Google</a>,
+     y compris les exigences d'utilisation limitée.</p>
+
+  <h2>Révoquer l'accès</h2>
+  <p>L'accès de Klipper à un compte Google peut être retiré à tout moment depuis
+     <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+     Le jeton local est alors inutilisable et peut être supprimé de l'ordinateur.</p>
+
+  <h2>Contact</h2>
+  <p>Pour toute question : <a href="mailto:kavodvoice@gmail.com">kavodvoice@gmail.com</a>.</p>
+
+  <footer><a href="index.html">Accueil</a> · Klipper</footer>
+</main>
+</body>
+</html>
